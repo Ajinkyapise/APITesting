@@ -1,0 +1,20 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "name", "private", "full_name", "owner"],
+    "properties": {
+      "id": { "type": "integer" },
+      "name": { "type": "string" },
+      "private": { "type": "boolean" },
+      "full_name": { "type": "string" },
+      "owner": {
+        "type": "object",
+        "required": ["login"],
+        "properties": {
+          "login": { "type": "string" }
+        }
+      }
+    }
+  }
+}
